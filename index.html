@@ -35,18 +35,18 @@ function changeStyle() {
       p.style.textIndent = "0.7cm";
     }
 function hideMiddleImage() {
-  var middleImage = document.getElementsByName("image4")[0];
+  var middleImage = document.getElementsByName("image2")[0];
   middleImage.style.display = "none";
 }
 
 function showMiddleImage() {
-  var middleImage = document.getElementsByName("image4")[0];
+  var middleImage = document.getElementsByName("image2")[0];
   middleImage.style.display = "block";
 }
 
 function swapLayers() {
-  var topImage = document.getElementsByName("image5")[0];
-  var bottomImage = document.getElementsByName("image6")[0];
+  var topImage = document.getElementsByName("image1")[0];
+  var bottomImage = document.getElementsByName("image3")[0];
   
   var tempZIndex = topImage.style.zIndex;
   topImage.style.zIndex = bottomImage.style.zIndex;
@@ -105,9 +105,9 @@ function swapLayers() {
 <button class = "buttonstyle" onclick="showMiddleImage()">Показать рисунки</button>
 <button class = "buttonstyle" onclick="swapLayers()">Поменять картинки</button>
 
-<img src="image4.jpg" class="image" style="z-index: 3;"img.style.paddingLeft="1.5cm"; name="image4" >
-<img src="image5.jpg" class="image" style="z-index: 2;"img.style.paddingLeft="1.5cm"; name="image5">
-<img src="image6.jpg" class="image" style="z-index: 1;"img.style.paddingLeft="1.5cm"; name="image6">
+<img src="image1.jpg" class="image" style="z-index: 3;"img.style.paddingLeft="1.5cm"; name="image1" >
+<img src="image2.jpg" class="image" style="z-index: 2;"img.style.paddingLeft="1.5cm"; name="image2">
+<img src="image3.jpg" class="image" style="z-index: 1;"img.style.paddingLeft="1.5cm"; name="image3">
 
 </main>
 </div> 
